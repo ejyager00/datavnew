@@ -1,0 +1,104 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*
+COLOR SCHEME
+Dark Brown - rgb(78,41,19)
+Light Brown - #613318
+Gold - #ffcc00
+FONTS
+Heading - Avenir
+Serif - Warnock Pro
+*/
+
+body {
+	background:url(FlameCurve_BrownGold.png) top left no-repeat;
+	background-size: 10vw 100vh;
+	background-attachment:fixed;
+	background-color: rgb(78,41,19);
+	margin: 0% 0% 0% 0%;
+	padding: 0% 0% 0% 0%;
+	text-align: center;
+}
+nav {
+	margin: 0% 0% 0% 0%;
+	padding: 0% 0% 0% 0%;
+	clear: both;
+}
+#navselect {
+	float: left;
+	text-align: center;
+	width: 15%;
+	font-size: 150%;
+	background-color: rgba(255, 204, 0, .6);
+}
+#navsearch {
+	float: right;
+	text-align: left;
+	width: 25%;
+	background-color: rgba(255, 204, 0, .6);
+}
+#navlink > a {
+	float: left;
+	width: 20%;
+	text-decoration: none;
+	color: black;
+	font-weight: 900;
+	font-size: 150%;
+	background-color: rgba(255, 204, 0, .6);
+	margin: 0% 0% 0% 0%;
+	padding: 1% 0% 1% 0%;
+	font-weight: 300;
+}
+#navlink > a:hover {
+	background-color: rgba(255, 204, 0, 1);
+}
+#wrapper {
+	background-color: #fafafa;
+	margin: 0% 0% 0% 0%;
+	padding: 0% 0% 0% 0%;
+	width: 100%;
+	max-width: 1000px;
+	display: inline-block;
+	min-height: 90vh;
+}
+#logo {
+	padding: 1vh 25vw 1vh 25vw;
+	height: 8vh;
+}
+#top {
+	border: 0px;
+}
+.nameidth{
+	text-align: right;
+}
+header {
+	background-color: rgba(255, 204, 0, 1);
+	padding: 1% 0% 1% 0%
+}
+h1 {
+	font-family: "Avenir", "Gotham", Arial, sans-serif;
+	margin: 0px 0px 0px 0px;
+}
+p {
+	font-family: "Warnock Pro", "Warnock", "Minion Pro", "Times New Roman", serif;
+}
+header > p {
+	margin: 0px 0px 0px 0px;
+}
+table {
+	font-family: "Warnock Pro", "Warnock", "Minion Pro", "Times New Roman", serif;
+	width: 100%;
+	border-collapse: collapse;
+}
+tr {
+	border: 1px solid;
+}
+td {
+	text-align: left;
+	border: 1px solid;
+}
+th {
+	border: 1px solid;
+}
