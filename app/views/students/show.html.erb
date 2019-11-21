@@ -1,0 +1,24 @@
+<% $credits = 0 %>
+<h3><%=@student.student_name%></h3>
+<table>
+	<tr>
+		<th>Course #</th>
+		<th>Section</th>
+		<th>Professor</th>
+		<th>Meetings</th>
+		<th>Students</th>
+		<th>Capacity</th>
+	</tr>
+	<% @student.sections.each do |section| %>
+		<% $credits = $credits + section.course.course_credits %>
+		<tr>
+			<td><%= section.course.course_num %></td>
+			<td><%= section.section_letter%></td>
+			<td><%= section.section_professor%></td>
+			<td><%= section.section_meetings%></td>
+			<td><%= section.students.size %></td>
+			<td><%= section.section_capacity %></td>
+		</tr>
+	<% end %>
+</table>
+<p>Total Credits: <%= $credits %></p>

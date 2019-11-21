@@ -12,15 +12,6 @@ Heading - Avenir
 Serif - Warnock Pro
 */
 
-body {
-	background:url(FlameCurve_BrownGold.png) top left no-repeat;
-	background-size: 10vw 100vh;
-	background-attachment:fixed;
-	background-color: rgb(78,41,19);
-	margin: 0% 0% 0% 0%;
-	padding: 0% 0% 0% 0%;
-	text-align: center;
-}
 nav {
 	margin: 0% 0% 0% 0%;
 	padding: 0% 0% 0% 0%;
@@ -53,39 +44,6 @@ nav {
 }
 #navlink > a:hover {
 	background-color: rgba(255, 204, 0, 1);
-}
-#wrapper {
-	background-color: #fafafa;
-	margin: 0% 0% 0% 0%;
-	padding: 0% 0% 0% 0%;
-	width: 100%;
-	max-width: 1000px;
-	display: inline-block;
-	min-height: 90vh;
-}
-#logo {
-	padding: 1vh 25vw 1vh 25vw;
-	height: 8vh;
-}
-#top {
-	border: 0px;
-}
-.nameidth{
-	text-align: right;
-}
-header {
-	background-color: rgba(255, 204, 0, 1);
-	padding: 1% 0% 1% 0%
-}
-h1 {
-	font-family: "Avenir", "Gotham", Arial, sans-serif;
-	margin: 0px 0px 0px 0px;
-}
-p {
-	font-family: "Warnock Pro", "Warnock", "Minion Pro", "Times New Roman", serif;
-}
-header > p {
-	margin: 0px 0px 0px 0px;
 }
 table {
 	font-family: "Warnock Pro", "Warnock", "Minion Pro", "Times New Roman", serif;

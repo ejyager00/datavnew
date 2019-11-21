@@ -8,8 +8,16 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= yield %>
+    <%= image_tag("valpo_prestige_logo.png", :alt => "Valparaiso University", :id => "logo") %>
+    <div id="wrapper">
+      <header>
+        <h1>DATA V-NEW</h1>
+        <p><i>The best tool for VU-ing your schedule.</i></p>
+      </header>
+      <div>
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
