@@ -1,0 +1,11 @@
+<h3>Register for section</h3>
+
+<%= form_for @student do |f| %>
+  <p>
+    Select Section<br>
+    <%= f.text_field :sections[@student.sections.size] %>
+  </p>
+  <p>
+    <%= f.submit :value=>'Register'%>
+  </p>
+<% end %>

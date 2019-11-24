@@ -1,0 +1,25 @@
+<table>
+	<tr>
+		<th>Number</th>
+		<th>Section</th>
+		<th>Name</th>
+		<th>Credit Hours</th>
+		<th>Professor</th>
+		<th>Meetings</th>
+		<th>Students</th>
+		<th>Capacity</th>
+	</tr>
+	<% @sections.each do |section| %>
+		<tr>
+			<td><%= section.course.course_num %></td>
+			<td><%= section.section_letter %></td>
+      <td><%= section.course.course_name %></td>
+      <td><%= section.course.course_credits %></td>
+      <td><%= section.section_professor %></td>
+      <td><%= section.section_meetings %></td>
+      <td><%= section.students.size %></td>
+      <td><%= section.section_capacity %></td>
+		</tr>
+	<% end %>
+
+</table>

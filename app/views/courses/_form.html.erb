@@ -1,0 +1,31 @@
+<%= form_for @course do |f| %>
+
+  <% if @course.errors.any? %>
+    <div id="error_explanation" style="text-align: left; margin-left: 20px;">
+      <h2>
+        <%= pluralize(@course.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @course.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <p>
+    Course Number<br>
+    <%= f.text_field :course_num %>
+  </p>
+  <p>
+    Course Name<br>
+    <%= f.text_field :course_name %>
+  </p>
+  <p>
+    Course Credit Hours<br>
+    <%= f.text_field :course_credits %>
+  </p>
+  <p>
+    <%= f.submit :value=>'Add Course'%>
+  </p>
+<% end %>

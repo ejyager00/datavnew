@@ -1,0 +1,23 @@
+<h3>Add section for this course</h3>
+
+<%= form_for([@course, @course.sections.build], html: {onsubmit: "this.submit(); this.reset(); return false;"}) do |f| %>
+  <p>
+    <%= f.label :section_letter %><br>
+    <%= f.text_field :section_letter %>
+  </p>
+  <p>
+    <%= f.label :section_professor %><br>
+    <%= f.text_field :section_professor %>
+  </p>
+  <p>
+    <%= f.label :section_meetings %><br>
+    <%= f.text_area :section_meetings %>
+  </p>
+  <p>
+    <%= f.label :section_capacity %><br>
+    <%= f.text_field :section_capacity %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
